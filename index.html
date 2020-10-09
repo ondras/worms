@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<script type="text/javascript" src="oz.js"></script>
+	<script type="text/javascript" src="worms.js"></script>
+	<link rel="stylesheet" type="text/css" href="worms.css" />
+</head>
+
+<body onload="new Worms()">
+	<div id="info">
+		Alive worms: <span id="count"></span><br/>
+		Total worms: <span id="total"></span><br/>
+		Round length: <span id="delay"></span> msec
+	</div>
+	<div id="help">
+		<span>?</span>
+		<div>
+			This simulation shows a small kingdom of rainbow-hued worms, living in a two-dimensional grid. They travel randomly, but act according to these simple rules:
+			<ul>
+				<li>Every worm has its (constant) growth speed; it slowly grows longer as it travels.</li>
+				<li>When two or more worms (or, more precisely, their heads) meet on a spot, the strongest (longest) worm consumes all other worms, enlarging itself.</li>
+				<li>The longer a worm is, the higher is its probability of a complete desintegration. When a worm reaches critical state, it dies and splits into many tiny wormlings.</li>
+			</ul>
+			<b>Simulation speed can be adjusted using a mouse wheel. Toggle individual grid edges by drawing a line across the grid.</b>
+		</div>
+	</div>
+</body>
+</html>
